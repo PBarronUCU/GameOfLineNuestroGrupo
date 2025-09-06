@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ucu.Poo.GameOfLife
+namespace Program
 {
     class Program
     {
