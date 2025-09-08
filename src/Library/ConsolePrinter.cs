@@ -1,10 +1,10 @@
-using System; 
-namespace Library;
+using System;
 using System.Text;
+namespace Library;
 
-    
-public class ConsolePrinter//Clase responsable de tomar un array de boleanos e imprimirlo a pantalla
-{                         //Es la unica responsabilidad que tiene, por lo que solo tendria una razon de cambio
+public class ConsolePrinter //Clase responsable de tomar un array de boleanos e imprimirlo a pantalla
+{
+    //Es la unica responsabilidad que tiene, por lo que solo tendria una razon de cambio
     public static void Pantalla(bool[,] board)
     {
         bool[,] b = board;
@@ -12,11 +12,11 @@ public class ConsolePrinter//Clase responsable de tomar un array de boleanos e i
         int height = board.GetLength(1);
         Console.Clear();
         StringBuilder s = new StringBuilder();
-        for (int y = 0; y<height;y++)
+        for (int y = 0; y < height; y++)
         {
-            for (int x = 0; x<width; x++)
+            for (int x = 0; x < width; x++)
             {
-                if(b[x,y])
+                if (b[x, y])
                 {
                     s.Append("|X|");
                 }
@@ -25,13 +25,10 @@ public class ConsolePrinter//Clase responsable de tomar un array de boleanos e i
                     s.Append("___");
                 }
             }
+
             s.Append("\n");
         }
+
         Console.WriteLine(s.ToString());
-        
-        
-        
-        
-        
     }
 }
