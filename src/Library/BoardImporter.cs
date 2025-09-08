@@ -1,8 +1,8 @@
 namespace Library; 
 using System.IO;  
-public class BoardImporter/*Clase Responsable de tomar un archivo de texto y convertirlo en un array de booleanos*/
-                          /*Tine esta unica responbilidad, por lo que solo tendira que ser cambiada si queremos modificar
-                         como importar un archivo*/
+public class BoardImporter//Clase Responsable de tomar un archivo de texto y convertirlo en un array de booleanos/
+/*Tiene esta unica responbilidad, por lo que solo tendira que ser cambiada si queremos modificar
+como importar un archivo*/
 {
     public static bool[,] Importar(string path)
     {
